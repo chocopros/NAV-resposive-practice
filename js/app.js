@@ -1,12 +1,9 @@
+console.log("Jesus Arechider")
 
-console.log("Jesus Arechider Web - Practice NAV")
+const navToggle = document.querySelector(".nav-toggle")
+const navMenu = document.querySelector(".nav-menu")
 
-addEventListener('DOMContentLoaded', () => {
-    const btn_menu = document.querySelector('.btn_menu')
-    if(btn_menu){
-        btn_menu.addEventListener('click', () => {
-            const menu_items = document.querySelector('.menu_items')
-            containerList.classList.toggle('show')
-        })
-    }
+navToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("nav-menu_visible")
 })
+
